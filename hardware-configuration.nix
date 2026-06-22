@@ -32,6 +32,14 @@
   swapDevices =
     [ { device = "/dev/disk/by-uuid/e3ffc849-860e-45cf-86cc-068df022acfe"; }
     ];
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true; # Crucial for Steam and Proton
+     extraPackages = with pkgs; [
+    intel-media-driver # Per la decodifica video hardware (VA-API)
+    vpl-gpu-rt         # Supporto runtime per GPU Intel recenti
+  ];
+  };
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.npu.enable = true;

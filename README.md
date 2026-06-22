@@ -24,6 +24,12 @@ The system is structured into multiple modules such as boot, networking, users, 
 - Modular structure for future multi‑host support  
 - Hyprland configuration will be added soon ( hyprland.lua with waybar... )
 
+## Hyprland Configuration
+To use this NixOS setup with Hyprland, make sure to include my Hyprland configuration as well:
+
+👉 [Hyprland Configuration](https://github.com/Matteo7034/Hyprland-Nixos)
+
+
 ## 🚀 Usage
 Clone the repository into `/etc/nixos`:
 
