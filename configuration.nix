@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./modules/steam.nix
+      #./modules/steam.nix
       ./modules/pkg.nix
       ./modules/hyprland.nix
       ./modules/update.nix

@@ -3,6 +3,11 @@
 
 {
   
+   # Enable GVfs daemon
+  services.gvfs.enable = true;
+  services.tumbler.enable = true;
+  # Optional but highly recommended for USB drives and automounting
+  services.udisks2.enable = true;
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -42,7 +47,7 @@
   };
 
   # Flatpak
-  services.flatpak.enable = true;    
+  #services.flatpak.enable = true;    
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
